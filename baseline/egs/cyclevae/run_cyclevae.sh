@@ -70,7 +70,7 @@ n_jobs=40
 # batch_size: batch frame size
 # }}}
 
-spks=(SEF1 SEF2 SEM1 SEM2 TFM1 TGM1 TMM1 TEF1 TEM1 TEF2 TEM2 TFF1 TGF1 TMF1)
+spks=(SEM1 TEM1)
 
 data_name=vcc2020
 
@@ -181,12 +181,12 @@ n_gpus=2
 n_gpus=3
 
 # for reconstruction/list file of PWG training data
-spks_trg_rec=(TEF1 TMF1 TEM1 TMM1 TFF1 TFM1 TGF1 TGM1 TEF2 TEM2 SEF1 SEM1 SEF2 SEM2)
-spks_src_rec=(SEF1 SEM1 SEF2 SEM2)
+spks_trg_rec=(TEM1 SEM1)
+spks_src_rec=(SEM1)
 
 # for conversion
-spks_trg_dec=(TEF1 TMF1 TEM1 TMM1 TFF1 TFM1 TGF1 TGM1 TEF2 TEM2)
-spks_src_dec=(SEF1 SEM1 SEF2 SEM2)
+spks_trg_dec=(TEM1)
+spks_src_dec=(SEM1)
 
 ### END OF DECODING SETTINGS
 

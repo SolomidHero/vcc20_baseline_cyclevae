@@ -11,13 +11,13 @@ stage=                     # running stage (1-3)
                            # stage 3: PWG decoding (voice conversion)
 . parse_options.sh || exit 1;
 
-srcspks=("SEF1" "SEF2" "SEM1" "SEM2")
-espks=("TEF1" "TEF2" "TEM1" "TEM2")
-fspks=("TFF1" "TFM1")
-gspks=("TGF1" "TGM1")
-mspks=("TMF1" "TMM1")
-tarspks=("${espks[@]}" "${fspks[@]}" "${gspks[@]}" "${mspks[@]}")
-allspks=("${srcspks[@]}" "${espks[@]}" "${fspks[@]}" "${gspks[@]}" "${mspks[@]}")
+srcspks=("SEM1")
+espks=("TEM1")
+fspks=()
+gspks=()
+mspks=()
+tarspks=("${espks[@]}")
+allspks=("${srcspks[@]}" "${espks[@]}")
 
 # PWG training
 if echo ${stage} | grep -q 1; then
