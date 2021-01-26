@@ -11,7 +11,7 @@ stage=                     # running stage (1-3)
                            # stage 3: PWG decoding (voice conversion)
 . parse_options.sh || exit 1;
 
-srcspks=("SEM1")
+srcspks=("SEF1" "SEM1" "SEF2" "SEM2")
 espks=("TEM1")
 fspks=()
 gspks=()
