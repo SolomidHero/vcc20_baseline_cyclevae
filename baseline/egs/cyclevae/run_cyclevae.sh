@@ -160,7 +160,7 @@ echo $GPU_device
 
 ### DECODING SETTINGS
 
-#GPU_device_str="0"
+GPU_device_str="0"
 #GPU_device_str="1"
 #GPU_device_str="2"
 #GPU_device_str="0,2"
@@ -169,7 +169,7 @@ echo $GPU_device
 #GPU_device_str="1,2"
 #GPU_device_str="2,1"
 #GPU_device_str="1,0"
-GPU_device_str="0,1,2"
+# GPU_device_str="0,1,2"
 #GPU_device_str="1,2,0"
 #GPU_device_str="1,0,2"
 #GPU_device_str="2,1,0"
@@ -177,8 +177,8 @@ GPU_device_str="0,1,2"
 min_idx=78
 
 n_gpus=1
-n_gpus=2
-n_gpus=3
+# n_gpus=2
+# n_gpus=3
 
 # for reconstruction/list file of PWG training data
 spks_trg_rec=(TEF1 TMF1 TEM1 TMM1 TFF1 TFM1 TGF1 TGM1 TEF2 TEM2 SEF1 SEM1 SEF2 SEM2)

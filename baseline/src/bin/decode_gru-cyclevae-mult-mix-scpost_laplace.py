@@ -325,7 +325,7 @@ def main():
                 cvlist_src.append(np.var(cvmcep_src[:,1:], axis=0))
 
                 logging.info("synth voco")
-                cvsp = ps.mc2sp(cvmcep, args.mcep_alpha, fft_size)
+                cvsp = ps.mc2sp(np.ascontiguousarray(cvmcep), args.mcep_alpha, fft_size)
                 logging.info(cvsp.shape)
                 wav = np.clip(pw.synthesize(cvf0, cvsp, ap, fs, frame_period=args.shiftms), -1, 1)
                 wavpath = os.path.join(args.outdir, os.path.basename(wav_file).replace(".wav", "_cv.wav"))
